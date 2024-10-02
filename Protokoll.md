@@ -41,16 +41,3 @@ The program uses `getopt()` to handle command-line options. Users can enable rec
 ### Recursive Search and Case Insensitivity
 
 With the `-R` flag, the program searches through directories and subdirectories recursively using `readdir()` and `opendir()`. If the `-i` flag is set, filenames are compared in a case-insensitive manner by converting strings to lowercase before comparing.
-
-------
-
-### Conclusion
-
-The *myfind* program efficiently searches for multiple files in parallel, supports recursive and case-insensitive search, and ensures synchronized output from parallel processes. It meets all requirements, including handling multiple arguments, recursive directory traversal, and output synchronization.
-
-------
-
-### Notes
-
-- The project includes a `Makefile` for compiling the program (`all` target) and cleaning up (`clean` target).
-- Errors are handled gracefully, with appropriate messages when paths or arguments are invalid.
